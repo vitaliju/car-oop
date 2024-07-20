@@ -1,12 +1,5 @@
 export class Car {
-  constructor(
-    pavadinimas,
-    modelis,
-    spalva,
-    bakoTalpa,
-    kuroLikutis,
-    vidKuroSanaudos100km
-  ) {
+  constructor(pavadinimas, modelis, spalva, bakoTalpa, kuroLikutis, vidKuroSanaudos100km) {
     this.brand = pavadinimas;
     this.model = modelis;
     this.color = spalva;
