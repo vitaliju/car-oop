@@ -8,6 +8,7 @@ console.log(audi.turnEngineOn());
 console.log(audi.turnEngineOff());
 console.log(audi.turnEngineOff());
 console.log(audi.turnEngineOn());
+console.log(audi);
 console.log(audi.inStartDrivingModeKm(10));
 console.log(audi.inDrivingModeKm(100));
 console.log(audi.stopDriving());
