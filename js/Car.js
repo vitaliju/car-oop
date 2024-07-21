@@ -38,7 +38,7 @@ export class Car {
     }
   }
 
-  inStartDrivingModeKm(km) {
+  startDriving(km) {
     if (this.isEngineOn === false) {
       return `Pries pradedant vaziuoti ijunkite varikli.`;
     } else {
@@ -48,7 +48,7 @@ export class Car {
     }
   }
 
-  inDrivingModeKm(km) {
+  driving(km) {
     if (this.isEngineOn === false) {
       return `Pries vaziuojant ijunkite varikli.`;
     } else {
@@ -67,11 +67,11 @@ export class Car {
     }
   }
 
-  fuelLeftInTankLiters() {
+  fuelLeftInTank() {
     return `Automobilio bake liko ${this.fuelLeft} litru kuro.`;
   }
 
-  fillTankWithFuel(liters) {
+  fillFuelInTank(liters) {
     if (this.isEngineOn === true) {
       return `Pries pildami kura isjunkite varikli.`;
     } else {
