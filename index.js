@@ -1,6 +1,6 @@
 import { Car } from "./js/Car.js";
 
-const audi = new Car("Audi", "80", "Grey", 66, 40, 7);
+const audi = new Car("Audi", "80", "Black", 66, 41, 7);
 console.log(audi);
 
 console.log(audi.turnEngineOn());

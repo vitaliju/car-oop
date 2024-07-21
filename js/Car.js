@@ -1,5 +1,12 @@
 export class Car {
-  constructor(pavadinimas, modelis, spalva, bakoTalpa, kuroLikutis, vidKuroSanaudos100km) {
+  constructor(
+    pavadinimas,
+    modelis,
+    spalva,
+    bakoTalpa,
+    kuroLikutis,
+    vidKuroSanaudos100km
+  ) {
     this.brand = pavadinimas;
     this.model = modelis;
     this.color = spalva;
@@ -56,7 +63,7 @@ export class Car {
       this.speed = 0;
       return `Automobilis sustojo.`;
     } else {
-      return `Automobilis nejuda.`;
+      return `Automobilis stovi.`;
     }
   }
 
