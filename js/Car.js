@@ -1,12 +1,5 @@
 export class Car {
-  constructor(
-    pavadinimas,
-    modelis,
-    spalva,
-    bakoTalpa,
-    kuroLikutis,
-    vidKuroSanaudos100km
-  ) {
+  constructor(pavadinimas, modelis, spalva, bakoTalpa, kuroLikutis, vidKuroSanaudos100km) {
     this.brand = pavadinimas;
     this.model = modelis;
     this.color = spalva;
@@ -82,11 +75,11 @@ export class Car {
       if (liters > this.tankCapacity - this.fuelLeft) {
         filledLiters = (this.tankCapacity - this.fuelLeft).toFixed(2);
         this.fuelLeft = this.tankCapacity;
-        return `Norejote uzpilti ${liters} litru kuro. Uzpilta ${filledLiters} litru kuro. Bakas pilnas. Kuro likutis bake ${this.fuelLeft} litru.`;
+        return `Uzpilta ${filledLiters}l kuro. Bakas pilnas,kuro likutis ${this.fuelLeft}l.`;
       }
       if (liters < this.tankCapacity - this.fuelLeft) {
         this.fuelLeft = this.fuelLeft + liters;
-        return `Uzpilta ${liters} litru kuro. Kuro likutis bake ${this.fuelLeft} litru.`;
+        return `Uzpilta ${liters}l kuro. Kuro likutis ${this.fuelLeft}l.`;
       }
     }
   }
